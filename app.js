@@ -12,3 +12,12 @@ async function handleGetFox() {
 handleGetFox();
 
 btn.addEventListener("click", handleGetFox);
+
+async function getMyStuffFromOverThere() {
+  const response = await fetch("https://api.github.com/repos/kadar12/forms");
+  console.log("HTTP response:", response);
+  const json = await response.json();
+  console.log("JSON data:", json);
+}
+
+getMyStuffFromOverThere();
