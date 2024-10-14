@@ -13,6 +13,9 @@ handleGetFox();
 
 btn.addEventListener("click", handleGetFox);
 
+const myVariable = "yada yada yada";
+debugger;
+
 async function getMyStuffFromOverThere() {
   const response = await fetch("https://api.github.com/repos/kadar12/forms");
   console.log("HTTP response:", response);
